@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>B站 AI 每日歌单</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>🎵 AI 每日歌单</h1>
+      <p class="hint">输入你的听歌偏好，插件会每天推荐 10 首 B 站歌曲视频。</p>
+
+      <label for="keywords">偏好关键词（逗号分隔）</label>
+      <input id="keywords" type="text" placeholder="如：华语流行,治愈,女声" />
+
+      <label for="mood">今日心情</label>
+      <select id="mood">
+        <option value="relax">放松</option>
+        <option value="focus">专注</option>
+        <option value="energetic">活力</option>
+        <option value="nostalgia">怀旧</option>
+      </select>
+
+      <button id="saveBtn">保存偏好</button>
+      <p id="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
